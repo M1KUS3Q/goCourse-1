@@ -1,3 +1,3 @@
-module github/Ko4s/goCourse
+module goCourse
 
 go 1.15

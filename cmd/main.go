@@ -2,12 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github/Ko4s/goCourse/class1"
+	"goCourse/class2"
 )
 
-func main() {
-	//uruchamiam funcke z paczki goexamples
-	fmt.Println("Hello World")
-	class1.ControlProgramWithArgs()
-	//ge.DestroyWorld()
+func main(){
+	  class2.ShowExamples()
+	  fmt.Println(class2.ReadLinesFromFile("class2/lol.txt"))
 }
