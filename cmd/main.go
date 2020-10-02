@@ -1,11 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"goCourse/class2"
-)
+import "goCourse/class2"
 
-func main(){
-	  class2.ShowExamples()
-	  fmt.Println(class2.ReadLinesFromFile("class2/lol.txt"))
+func main() {
+	class2.Apples()
 }
