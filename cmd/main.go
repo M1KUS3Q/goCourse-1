@@ -1,12 +1,22 @@
 package main
 
 import (
+	"log"
 
-	"goCourse/class2"
-
-
+	"goCourse/class3"
 )
 
 func main() {
-	class2.HashFromFile("class2/lol.txt","class2/output.txt")
+	h := class3.NewHasher("in", "out")
+	err := h.ReadLines()
+	handleError(err)
+	err = h.HashLines()
+	handleError(err)
+	err = h.SaveToFile()
+	handleError(err)
+}
+func handleError(err error) {
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
